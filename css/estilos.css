@@ -1,1 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext');
+:root{
+        --color-red:#ff4b63;
+        --color-text:#2d2d2d;
+        --color-white:#fff;
+        --color-background: #c6d9f0;
+        --font-principal: 'Open Sans', sans-serif;
+        --margin-top: 10%;
+}
+*{
+        box-sizing: border-box;
+}
 
+html{
+        scroll-behavior: smooth;
+}
+
+body{
+        font-family: var(--font-principal);
+        padding: 0;
+        margin: 0 auto;
+        display: grid;
+        width: 100%;
+        grid-template-areas:   "navigator"
+                                                "section1"
+                                                "section2"
+                                                "section3"
+                                                "section4"
+                                                "section5"          
+                                                "section6"  
+                                                "section7"                       
+                                                ;
+        grid-template-columns: 100%;
+        grid-template-rows:     60px
+                                                1fr
+                                                1fr
+                                                1fr
+                                                1.5fr
+                                                1fr
+                                                1fr
+                                                1fr;   
+}
+
+.header{
+        width: 100%;
+        height: 100px;
+        grid-area: navigator;
+        background-color: var(--color-background);
+        position: fixed;
+        box-shadow: 0px 10px 10px -6px #969696;
+}
+main{
+        margin-top: var(--margin-top);
+        width: 100%;
+        background-image: url(../img/decorative-white-circle.svg);
+        background-repeat: no-repeat;
+        background-position-x:0;
+        background-position-y:  200px;
+}
+.presentacion{
+        width: 90%;
+        margin: 0 auto;
+        grid-area: "section1";
+        text-align: center;
+        margin-bottom: 5%;
+}
+.presentacion_figuras-arriba{
+        height: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+}
+.presentacion_figuras-arriba-circle{
+        margin-right: 5%;
+}
+
+.presentacion__textos h1{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-size: 4rem;
+        font-weight: 700;
+        padding-bottom: 1%;
+}
+
+.presentacion__textos p{
+        margin: 0 auto;
+        width: 80%;
+        color: var(--color-text);
+        font-size: 1rem;
+}
+
+.presentacion__botones {
+        margin-top: 5%;
+}
+
+.button-text {
+        margin-right: 5px;
+}
+
+.mac-button:hover {
+        border: 2px solid var(--color-red);
+        color: var(--color-red);
+        background-color: var(--color-background);
+}
+
+/* ************************************************************** */
+
+.presentacion_figuras-abajo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+}
+
+.presentacion_figuras-abajo img{
+        height: 9%;
+        width: 9%;
+}
+
+/******************* FIN SECTION 2***********************/
+.img__phone {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: var(--margin-top);
+        grid-area: "section2"; 
+}
+
+.img__phone img{
+        height: 100%;
+        width: 100%;
+}
+/******************* FIN SECTION 2***********************/
+
+/******************* INI SECTION 3***********************/
+
+.social__iconos__colores {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 5%;
+        grid-area: "section3"; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+}
+.social__iconos__colores-alinear{
+        margin-top: 3%;
+        width: 25%;
+}
+#social__iconos__colores-circulo-gente , #social__iconos__colores-circulo-situation , #social__iconos__colores-circulo-settings, #social__iconos__colores-circulo-interaction , #social__iconos__colores-circulo-done{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#social__iconos__colores-circulo-gente {
+        background-color: #e8e3f9;
+}
+
+#social__iconos__colores-circulo-situation{
+        background-color: #d5f2ed;
+}
+
+#social__iconos__colores-circulo-settings{
+        background-color: #f7e1e7;
+}
+
+#social__iconos__colores-circulo-interaction{
+        background-color: #f7efd9;
+}
+
+#social__iconos__colores-circulo-done{
+        background-color: #ddf0f9;
+}
+
+.social__iconos__colores-alinear {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.social__iconos__colores-circulo-ampliar-img {
+        width: 60%;
+        height: 60%;
+}
+
+strong{
+        font-size: 1.1em;
+        font-weight: 700;
+}
+
+/******************* FIN SECTION 3***********************/
+
+/******************* INI SECTION 4***********************/
+.description{
+        width: 90%;
+        margin: 0 auto;
+        grid-area: "section4";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20%;
+        margin-bottom: var(--margin-top);
+}
+.description__img{
+        width: 55%;
+}
+.description__img img{
+        width: 100%;
+        height: 100%;
+}
+
+.description__text{
+        width: 45%;
+}
+.description__text h2{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 700;
+        font-size: 2.5rem;
+}
+.description__text p{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        margin-top: 5%;
+}
+.description__text ul{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 2rem;
+        list-style-type: square;
+        list-style-position: outside;
+        padding-left: 5%;
+        margin-top: 5%;
+}
+.description__button{
+        margin-top: var(--margin-top);
+}
+.description__button button{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color:var(--color-background);
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 12px 40px;
+        border-radius: 50px;
+        border: 2px solid var(--color-red);
+        color: var(--color-background);
+        background-color: var(--color-red);
+}
+.description__button button:hover{
+        border: 2px solid var(--color-red);
+        color: var(--color-red);
+        background-color: var(--color-background);
+}
+/******************* FIN SECTION 4***********************/
+
+/******************* INI SECTION 5***********************/
+.calendar{
+        padding-top:  var(--margin-top);
+        background-color: #e5edf5;
+        grid-area: "section5";
+        padding-bottom: var(--margin-top);
+}
+.calendar__div{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+}
+.calendar__text{
+        width: 45%;
+        margin-left: 5%;
+}
+
+.calendar__text h2{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 700;
+        font-size: 2.5rem;
+}
+
+.calendar__text p{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        margin-top: 5%;
+}
+
+.calendar__text ul{
+        list-style-image: url(../img/cuadro-verde.png);
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 2rem;
+        list-style-position: outside;
+        padding-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+}
+
+.calendar__img{
+        width: 55%;
+}
+.calendar__img img{
+        width: 100%;
+        height: 100%;
+}
+
+.calendar__button-terms{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color:var(--color-background);
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 12px 40px;
+        border-radius: 50px;
+        border: 2px solid var(--color-red);
+        color: var(--color-background);
+        background-color: var(--color-red);
+}
+.calendar__button-terms:hover{
+        border: 2px solid var(--color-red);
+        color: var(--color-red);
+        background-color: var(--color-background);
+}
+
+.calendar__button-privacy{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color:var(--color-background);
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 12px 40px;
+        border-radius: 50px;
+        border: 2px solid var(--color-text);
+        color: var(--color-text);
+        background-color: var(--color-background);
+}
+.calendar__button-privacy:hover{
+        border: 2px solid var(--color-red);
+        color: var(--color-red);
+        background-color: var(--color-background);
+}
+/******************* FIN SECTION 5***********************/
+
+/******************* INI SECTION 6***********************/
+.user{
+        width: 100%;
+        grid-area: "section6";
+        margin-top: var(--margin-top);
+}
+.user__div{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+}
+
+.user__div-estrella{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+.user__div h2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 3%;
+}
+
+.user__div-estrella hr{
+        width: 20%;
+        background-color:#c4c4c4 ;
+        height: 4px;
+        border: 1px solid #eee;
+}
+.user__div-estrella p{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-style: italic;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        margin-top: 1%;
+}
+
+.user__div-estrella-estrellitas{
+        text-align: center;
+        width: 27%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.user__div-estrella-estrellitas i{
+        font-size: 1.2rem;
+        color: orange;
+}
+/******************* FIN SECTION 6***********************/
+.smartphone{
+        grid-area: "section7";
+}

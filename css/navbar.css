@@ -1,0 +1,102 @@
+:root {
+        --color-red: #ff4b63;
+        --color-text: #2d2d2d;
+        --color-background:#fff;
+}
+*{
+        box-sizing: border-box;
+}
+.header__section{
+        margin: 0 auto;
+        width: 90%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+}
+.header__logo{
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* padding: 20px 10px 10px 10px; */
+}
+.header__logo  img{
+        height: 30%;
+        width: 30%;
+}
+.header__navigator{
+        display: flex;
+        justify-content: flex-end;
+}
+.header__navigator ul {
+        width: 70% ;
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+.header__navigator li{
+        text-align: center;
+        padding: 0 10px;
+}
+.header__navigator a {
+        color: var(--color-text);
+        font-weight:  700;
+        text-decoration: none;
+}
+.header__navigator a:hover {
+        color: var(--color-red);
+}
+
+.header__navigator li .header__navigator-button {
+        padding: 5px 30px;
+        border-radius: 30px;
+        border: 2px solid var(--color-red);
+        color: var(--color-red);
+        background-color: var(--color-background);
+}
+
+.header__navigator li .header__navigator-button:hover {
+        color: var(--color-background);
+        background-color: var(--color-red);
+}
+
+/* presentacion__botones__navigator */
+
+.presentacion__botones__navigator ul {
+        height: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.presentacion__botones__navigator li{
+        text-align: center;
+        padding: 0 10px;
+}
+.presentacion__botones__navigator a {
+        color: var(--color-background);
+        font-weight:  700;
+        text-decoration: none;
+}
+
+.presentacion__botones__navigator li .presentacion__botones__navigator-button {
+        font-size: 1.2rem;
+        padding: 5px 30px;
+        border-radius: 30px;
+        border: 2px solid var(--color-red);
+        color: var(--color-background);
+        background-color: var(--color-red);
+
+}
+
+.presentacion__botones__navigator li .presentacion__botones__navigator-button:hover {
+        border: 2px solid var(--color-red);
+        color: var(--color-red);
+        background-color: var(--color-background);
+}
