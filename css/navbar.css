@@ -48,12 +48,16 @@
         text-align: center;
         padding: 0 10px;
 }
-.header__navigator a {
+.header__navigator a  {
         color: var(--color-text);
         font-weight:  700;
         text-decoration: none;
 }
 .header__navigator a:hover {
+        color: var(--color-red);
+}
+
+.opcionActiva{
         color: var(--color-red);
 }
 

@@ -22,7 +22,7 @@ body{
         margin: 0 auto;
         display: grid;
         width: 100%;
-        grid-template-areas:   "navigator"
+        /* grid-template-areas:   "navigator"
                                                 "section1"
                                                 "section2"
                                                 "section3"
@@ -43,7 +43,7 @@ body{
                                                 1fr
                                                 1fr
                                                 1fr
-                                                1fr;   
+                                                1fr;    */
 }
 
 .header{
@@ -565,9 +565,8 @@ strong{
 /************************************************************/
 
 .footer{
-        margin-top: 10%;
         width: 100%;
-        height: 300px;
+        height: 200px;
         /* grid-area: "section9"; */
         bottom: 0;
 }
