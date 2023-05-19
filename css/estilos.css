@@ -16,6 +16,7 @@ html{
 }
 
 body{
+        background-color: #f8fafd;
         font-family: var(--font-principal);
         padding: 0;
         margin: 0 auto;
@@ -28,7 +29,8 @@ body{
                                                 "section4"
                                                 "section5"          
                                                 "section6"  
-                                                "section7"                       
+                                                "section7" 
+                                                "section8"                      
                                                 ;
         grid-template-columns: 100%;
         grid-template-rows:     60px
@@ -36,6 +38,7 @@ body{
                                                 1fr
                                                 1fr
                                                 1.5fr
+                                                1fr
                                                 1fr
                                                 1fr
                                                 1fr;   
@@ -372,6 +375,7 @@ strong{
         width: 100%;
         grid-area: "section6";
         margin-top: var(--margin-top);
+        background-color: #f8fafd;
 }
 .user__div{
         width: 90%;
@@ -381,6 +385,7 @@ strong{
 }
 
 .user__div-estrella{
+        margin-top: 3%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -425,7 +430,103 @@ strong{
         font-size: 1.2rem;
         color: orange;
 }
+
+.user__div-caja {
+        height: 150px;
+        background-color: var(--color-white);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+}
+
+.user__div-caja-img img{
+        width: 100%;
+}
 /******************* FIN SECTION 6***********************/
-.smartphone{
+
+/******************* INI SECTION 7***********************/
+.numeros{
+        width: 100%;
+        height: 300px;
         grid-area: "section7";
+        margin-top: var(--margin-top);
+        background-color: #e8eff6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.numeros__caja{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.numeros__caja-contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.numeros__caja-contenido h2{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 700;
+        font-size: 3.5rem;
+        text-align: center;
+}
+.numeros__caja-contenido p{
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        font-weight: 400;
+        font-size: 0.9rem;
+}
+
+/******************* FIN SECTION 7***********************/
+.secondPhone{
+        width: 100%;
+        height: 300px;
+        grid-area: "section8";
+        margin-top: var(--margin-top);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30%;
+}
+.secondPhone__caja{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.secondPhone__rombo{
+        display: flex;
+        justify-content: flex-end;
+}
+
+.secondPhone__rombo img {
+        width: 2%;
+        height: 2%;
+}
+        .secondPhone__caja-img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+}
+
+.secondPhone__caja-img img{
+        width: 90%;
+        height: 90%;
+}
+.secondPhone__caja-p p{
+        text-align: center;
+        color: var(--color-text);
+        text-align: center;
 }
