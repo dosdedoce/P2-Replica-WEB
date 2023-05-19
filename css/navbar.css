@@ -20,10 +20,16 @@
         align-items: center;
         /* padding: 20px 10px 10px 10px; */
 }
+
+.a__dar_vueltas:hover{
+        /* transform: rotate(360deg); */
+}
+
 .header__logo  img{
         height: 30%;
         width: 30%;
 }
+
 .header__navigator{
         display: flex;
         justify-content: flex-end;
@@ -62,6 +68,22 @@
 .header__navigator li .header__navigator-button:hover {
         color: var(--color-background);
         background-color: var(--color-red);
+}
+.animacionLogo {
+        animation-duration: 5s;
+        animation-name: animLogo;
+        animation-iteration-count: infinite;
+}
+@keyframes animLogo{
+        from {
+                transform: rotateY(0deg);
+        }
+        50%{
+                transform: rotateY(180deg);
+        }
+        to {
+                transform: rotateY(360deg);
+        }
 }
 
 /* presentacion__botones__navigator */

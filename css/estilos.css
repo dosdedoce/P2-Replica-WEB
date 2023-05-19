@@ -30,7 +30,8 @@ body{
                                                 "section5"          
                                                 "section6"  
                                                 "section7" 
-                                                "section8"                      
+                                                "section8"       
+                                                "section9"                  
                                                 ;
         grid-template-columns: 100%;
         grid-template-rows:     60px
@@ -38,6 +39,7 @@ body{
                                                 1fr
                                                 1fr
                                                 1.5fr
+                                                1fr
                                                 1fr
                                                 1fr
                                                 1fr
@@ -51,14 +53,16 @@ body{
         background-color: var(--color-background);
         position: fixed;
         box-shadow: 0px 10px 10px -6px #969696;
+        z-index: 100;
 }
 main{
         margin-top: var(--margin-top);
         width: 100%;
-        background-image: url(../img/decorative-white-circle.svg);
+        height: 100%;
+        /* background-image: url(../img/decorative-white-circle.svg);
         background-repeat: no-repeat;
         background-position-x:0;
-        background-position-y:  200px;
+        background-position-y:  200px; */
 }
 .presentacion{
         width: 90%;
@@ -129,8 +133,12 @@ main{
 }
 
 .img__phone img{
+        transition:all .5s ease-in-out;
         height: 100%;
         width: 100%;
+}
+.img__phone img:hover{
+        filter: grayscale(80%);
 }
 /******************* FIN SECTION 2***********************/
 
@@ -157,6 +165,22 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+}
+.darVueltas{
+        width: 25%;
+        height: 25%;
+        animation-name: animLogo;
+        animation: animLogo 4s infinite linear;
+
+}
+
+@keyframes animLogo {
+        from {
+                transform: translate(0, 0);
+        }
+        to {
+                transform: translate(100%, 0);
+        }
 }
 
 #social__iconos__colores-circulo-gente {
@@ -495,6 +519,7 @@ strong{
         justify-content: center;
         align-items: center;
         margin-top: 30%;
+        margin-bottom: 30%;
 }
 .secondPhone__caja{
         width: 90%;
@@ -512,13 +537,19 @@ strong{
         width: 2%;
         height: 2%;
 }
-        .secondPhone__caja-img{
+.secondPhone__caja-img{
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;
+        overflow:hidden;
+}
+
+.secondPhone__caja-img:hover img {
+        transition:all .5s ease-in-out;
+        transform:scale(0.7);
 }
 
 .secondPhone__caja-img img{
@@ -528,5 +559,24 @@ strong{
 .secondPhone__caja-p p{
         text-align: center;
         color: var(--color-text);
+        text-align: center;
+}
+
+/************************************************************/
+
+.footer{
+        margin-top: 10%;
+        width: 100%;
+        height: 300px;
+        /* grid-area: "section9"; */
+        bottom: 0;
+}
+
+.footer .hastaAquiLlegue{
+        margin: 0;
+        padding: 0;
+        color: var(--color-red);
+        font-weight: 700;
+        font-size: 3.5rem;
         text-align: center;
 }
